@@ -4,7 +4,11 @@ main:
     url: https://mcdtest.github.io/
   - title: "About"
     url: /about/
-  - title: "Category"
-    url: /categories/
+  - title: "Toy"
+    url: /toy/
+  - title: "Algorithm"
+    url: /algorithm/
+  - title: "Study"
+    url: /study/
   - title: "tag"
     url: /tags/
