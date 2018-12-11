@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[Algorithm]TEST"
 categories:
   - Algorithm
