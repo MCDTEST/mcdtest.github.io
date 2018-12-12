@@ -1,17 +1,17 @@
 ---
-title: "Algorithm"
+title: "Test"
 layout: archive
-permalink: /tags/algorithm
+permalink: /tags/test
 author_profile: true
 sidebar_main: true
 ---
 
-- 알고리즘 개념 정리
+- tag test
 
 ---
 # INDEX
 
-{% assign posts = site.tags.Algorithm | sort:"date" %}
+{% assign posts = site.tags.test | sort:"date" %}
 
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
