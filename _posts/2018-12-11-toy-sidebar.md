@@ -3,8 +3,7 @@ title: "[Toy]TEST"
 categories:
   - Toy
 tags:
-  - Toy
-  - Sidebar
+  - Toy_sidebar
 toc: true
 sidebar_main: true
 ---
