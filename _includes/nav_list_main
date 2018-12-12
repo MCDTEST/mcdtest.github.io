@@ -8,7 +8,8 @@
         <ul v-show="flag_c">
         {% for tag in site.tags %}
           {% if tag[0] contains 'Toy' %}
-            <li><a href="/tags/{{tag[0] | slugify}}" class="">{{tag[0] | capitalize }} ({{tag[1].size}})</a></li>
+            {% assign realTAG = tag[0] | split: "_" %}
+              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{realTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
           {% endif %}
         {% endfor %}
         </ul>
