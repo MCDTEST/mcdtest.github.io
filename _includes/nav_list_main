@@ -6,12 +6,10 @@
 
         <span class="nav__sub-title" v-on:click='togglec()'>Toy</span>
         <ul v-show="flag_c">
-        {% for category in site.categories %}
-          {% for tag in site.tags %}
-            {% if category[0] == 'Toy' %}
-              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{tag[0] | capitalize }} ({{tag[1].size}})</a></li>
-            {% endif %}
-          {% endfor %}
+        {% for tag in site.tags %}
+          {% if page.categoris == 'Toy' %}
+            <li><a href="/tags/{{tag[0] | slugify}}" class="">{{tag[0] | capitalize }} ({{tag[1].size}})</a></li>
+          {% endif %}
         {% endfor %}
         </ul>
 
