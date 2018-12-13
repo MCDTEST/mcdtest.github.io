@@ -1,7 +1,7 @@
 ---
 title: "Test"
 layout: archive
-permalink: /tags/toy_test
+permalink: /tags/toy-test
 author_profile: true
 sidebar_main: true
 ---
@@ -11,8 +11,8 @@ sidebar_main: true
 ---
 # INDEX
 
-{% if site.tags == Toy_test %}
-  {% assign posts = site.tags.Toy_test | sort:"date" %}
+{% if site.tags == Toy-test %}
+  {% assign posts = site.tags.Toy-test | sort:"date" %}
 
   {% for post in posts %}
     {% include archive-single.html type=page.entries_layout %}
