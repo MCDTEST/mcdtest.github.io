@@ -12,7 +12,7 @@ sidebar_main: true
 # INDEX
 
 
-  {% assign posts = site.tags.Toy-test | sort:"date" %}
+  {% assign posts = site.tags.Toy_test | sort:"date" %}
 
   {% for post in posts %}
     {% include archive-single.html type=page.entries_layout %}
