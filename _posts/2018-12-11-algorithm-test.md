@@ -3,7 +3,7 @@ title: "[Algorithm]TEST"
 categories:
   - Algorithm
 tags:
-  - test
+  - Algorithm_test
 toc: true
 sidebar_main: true
 ---

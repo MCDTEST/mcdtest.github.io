@@ -3,7 +3,7 @@ title: "[Study]TEST"
 categories:
   - Study
 tags:
-  - test
+  - Study_test
 toc: true
 sidebar_main: true
 ---
