@@ -8,8 +8,8 @@
         <ul v-show="flag_c">
         {% for tag in site.tags %}
           {% if tag[0] contains 'Toy' %}
-            {% assign realTAG = tag[0] | split: "_" %}
-              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{realTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
+            {% assign toyTAG = tag[0] | split: "_" %}
+              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{toyTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -18,8 +18,8 @@
         <ul v-show="flag_c">
         {% for tag in site.tags %}
           {% if tag[0] contains 'Algorithm' %}
-            {% assign realTAG = tag[0] | split: "_" %}
-              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{realTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
+            {% assign algorithmTAG = tag[0] | split: "_" %}
+              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{algorithmTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
           {% endif %}
         {% endfor %}
         </ul>
@@ -28,8 +28,8 @@
         <ul v-show="flag_c">
         {% for tag in site.tags %}
           {% if tag[0] contains 'Study' %}
-            {% assign realTAG = tag[0] | split: "_" %}
-              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{realTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
+            {% assign studyTAG = tag[0] | split: "_" %}
+              <li><a href="/tags/{{tag[0] | slugify}}" class="">{{studyTAG[1] | capitalize }} ({{tag[1].size}})</a></li>
           {% endif %}
         {% endfor %}
         </ul>
