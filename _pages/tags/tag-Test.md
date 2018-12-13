@@ -11,8 +11,10 @@ sidebar_main: true
 ---
 # INDEX
 
-{% assign posts = site.tags.toy_test | sort:"date" %}
+{% if site.tags == Toy_test %}
+  {% assign posts = site.tags.Toy_test | sort:"date" %}
 
-{% for post in posts %}
-  {% include archive-single.html type=page.entries_layout %}
-{% endfor %}
+  {% for post in posts %}
+    {% include archive-single.html type=page.entries_layout %}
+  {% endfor %}
+{% endif %}
