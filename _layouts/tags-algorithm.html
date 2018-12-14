@@ -18,7 +18,7 @@ layout: archive
         {% assign algorithmTAG = tag[0] | split: "_" %}
         <li>
           <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ algorithmTAG }}</strong> <span class="taxonomy__count">{{ i }}</span>
+            <strong>{{ algorithmTAG[1] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
       {% endif %}
@@ -31,7 +31,7 @@ layout: archive
     {% if tag[0] contains 'Algorithm' and tag[1].size == i %}
       {% assign algorithmTAG = tag[0] | split: "_" %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ algorithmTAG }}</h2>
+        <h2 class="archive__subtitle">{{ algorithmTAG[1] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in tag.last %}
             {% include archive-single.html type=page.entries_layout %}
